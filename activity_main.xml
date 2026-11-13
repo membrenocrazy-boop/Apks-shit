@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0A">
+    <LinearLayout android:orientation="vertical" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:text="Frida" android:textColor="#00FF00" android:textSize="20sp"/>
+        <Button android:id="@+id/clear_log_btn" android:text="Clear Logs"/>
+        <Button android:id="@+id/download_log_btn" android:text="Download Logs"/>
+        <Button android:id="@+id/choose_file_btn" android:text="Choose File"/>
+        <Button android:id="@+id/choose_folder_btn" android:text="Choose Folder"/>
+        <TextView android:id="@+id/frida_log" android:background="#000000" android:textColor="#FFFFFF" android:textSize="22sp" android:scrollbars="vertical" android:padding="8dp" android:layout_height="280dp"/>
+        <TextView android:text="Process" android:textColor="#00FF00" android:textSize="20sp" android:layout_marginTop="16dp"/>
+        <EditText android:id="@+id/process_search" android:hint="Search process / game" android:textColor="#FFFFFF"/>
+        <ListView android:id="@+id/process_list" android:layout_height="180dp"/>
+        <Switch android:id="@+id/auto_inject_switch" android:text="Auto-inject on launch" android:textColor="#FFFFFF"/>
+        <EditText android:id="@+id/auto_inject_package" android:hint="Package name" android:textColor="#FFFFFF"/>
+        <TextView android:text="ADB Shell" android:textColor="#00FF00" android:textSize="20sp" android:layout_marginTop="16dp"/>
+        <EditText android:id="@+id/adb_input" android:hint="Command" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/adb_run_btn" android:text="Run"/>
+        <TextView android:id="@+id/adb_output" android:background="#000000" android:textColor="#00FF00" android:scrollbars="vertical" android:padding="8dp" android:layout_height="160dp"/>
+        <TextView android:text="Library" android:textColor="#00FF00" android:textSize="20sp" android:layout_marginTop="16dp"/>
+        <EditText android:id="@+id/lib_name" android:hint="Name" android:textColor="#FFFFFF"/>
+        <EditText android:id="@+id/lib_command" android:hint="Command" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/lib_pick_script" android:text="Choose Script"/>
+        <Button android:id="@+id/lib_pick_folder" android:text="Choose Folder"/>
+        <Button android:id="@+id/lib_save" android:text="Save to Library"/>
+        <ListView android:id="@+id/library_list" android:layout_height="200dp"/>
+        <TextView android:text="Dump Game" android:textColor="#00FF00" android:textSize="20sp" android:layout_marginTop="16dp"/>
+        <Button android:id="@+id/dump_game_btn" android:text="Dump Selected Game"/>
+        <TextView android:id="@+id/dump_status" android:textColor="#FFFFFF"/>
+        <TextView android:text="Get APK of Game" android:textColor="#00FF00" android:textSize="20sp" android:layout_marginTop="16dp"/>
+        <Button android:id="@+id/get_apk_btn" android:text="Download Clean APK"/>
+        <TextView android:id="@+id/apk_status" android:textColor="#FFFFFF"/>
+        <TextView android:text="Live Class Dump" android:textColor="#00FF00" android:textSize="20sp" android:layout_marginTop="16dp"/>
+        <EditText android:id="@+id/class_dump_input" android:hint="Filter (optional)" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/live_class_dump_btn" android:text="Dump Classes"/>
+        <TextView android:id="@+id/class_dump_status" android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</ScrollView>
